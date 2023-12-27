@@ -1,0 +1,100 @@
+﻿@using ooyunsitesiprojedeneme2
+@{
+
+    var UsersNameHold = ViewData["UsersNameHold"];
+}
+
+
+<head>
+
+    <title>try</title>
+    <link rel="stylesheet" href="~/css/MainPage.css">
+
+</head>
+
+<body style="background-image: linear-gradient(black, rgb(33, 6, 33), black);">
+
+
+    <div class="ustMenu">
+
+        <div class="ustMenuPart">
+
+            <!--- <div class="ustMenuPart" style="width: 10%;background-image: url('~/images/trykarwalorYellow.png');background-size:cover; margin-left: 2%;"></div>--->
+            <div class="ustMenuPart" style="width: 100%; margin-left: 4%;">
+                <a href="/Home/Indexep"><input type="button" class="ustMenuNesne" style="float:left" value="ANASAYFA"></a>
+                <input type="button" class="ustMenuNesne" style="float:left" value="SSS">
+                <input type="button" class="ustMenuNesne" style=" float:left" value="İLETİŞİM">
+                <a href="/Home/Products"><input type="button" class="ustMenuNesne" style="float:left" value="ÜRÜNLER"></a>
+
+            </div>
+
+        </div>
+
+        <div class="ustMenuPart" style="width:48%;">
+
+            <!--- <div class="ustMenuPart" style="width: 10%;background-image: url('~/images/trykarwalorYellow.png');background-size:cover; margin-left: 2%;"></div>--->
+            <div class="ustMenuPart" style="width: 100%; margin-right: 4%;">
+                <form action="/Home">
+                    <a href="/Home/bucketPage"><input type="button" class="ustMenuNesne" style="float:right; cursor:pointer;" value="SEPET"></a>
+                    <a href="/Authentication/Logout"><input type="button" class="ustMenuNesne" style="float:right; cursor:pointer;" value="admin"></a>
+                    <a href="/Home/AdminPage"><input type="button" class="ustMenuNesne" style="float:right; cursor:pointer;" value="ADMİN SAYFASI"></a>
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="container">
+
+        <div class="Welcome">
+            <p class="welcomeTxt">Karwalor'a hoşgeldiniz<br></p>
+            <p class="welcomeTxtAbout">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div><!-- Welcome sonu -->
+
+        <div class="-slayt-">
+            <div class="Resim" style="background-image: url(/images/bune.jpg);background-size: 100%,70%;">
+                <div style="height: 36%;"></div> <input type="button" value="HEMEN OYNA" class="slaytButton1 aktifanimation" id="HemenOynaButton">
+            </div>
+            <div class="Açıklama">
+                <p class="welcomeTxt">Assasins Creed Valhalla</p>
+                <p class="welcomeTxtAbout">Activison ürünlerinde %80 indirim!</p>
+            </div>
+        </div><!-- Slayt sonu -->
+
+
+        <div class="-katalog-">
+            <div class="katalogHizala">
+                <div style="font-size: 50px; color: rgb(203, 203, 0);text-align: left;"><p style="margin-bottom: 3%; margin-top: 0px;">Koleksiyonlar</p></div>
+
+                <div class="product1" style="float: left;">
+
+                    <div class="Photo"><p style="margin: 0px; color: rgb(17, 177, 17);font-size: 30px;">Buraya Fotoğraf gelecek</p></div>
+                    <div class="productAltTaban"></div>
+
+                </div><!-- product1 sonu -->
+
+                <div class="Collections" style="margin-bottom: 2%;">
+                    <div class="Photo"><p style="margin: 0px; color: rgb(17, 177, 17);font-size: 30px;">Buraya Fotoğraf gelecek</p></div>
+                    <div class="productAltTaban"></div>
+                </div><!-- Collections sonu -->
+                <div class="Collections">
+                    <div class="Photo"><p style="margin: 0px; color: rgb(17, 177, 17);font-size: 30px;">Buraya Fotoğraf gelecek</p></div>
+                    <div class="productAltTaban"></div>
+                </div>
+
+            </div><!-- katalogHizalaSonu -->
+            <div><p style="color: red;">Container hatası! (MainPage.html/55.satırda açıklaması var.)</p></div>
+        </div><!-- katalog sonu -->
+    </div><!-- Container sonu (kaldırılacak container'ı uzatmak istedim ve herşey container'in uzunluğuna bağlı olduğu için site tamamen değişiyor. Bu yüzden divleri container olarak adlandırılan sınıftan bağımsız hale getirilmeli) -->
+
+
+
+
+
+</body>

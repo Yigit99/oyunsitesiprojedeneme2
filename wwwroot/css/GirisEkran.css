@@ -1,0 +1,59 @@
+﻿.kayitCard {
+    margin-left: 30%;
+    width: 40%;
+    height: 55%;
+    background-color: rgb(57, 48, 69);
+    margin-top: 12%;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px;
+    padding-top: 0.5%;
+}
+
+body {
+    
+    background-image: linear-gradient(rgb(10, 2, 20), rgb(33, 6, 33), black);
+}
+
+.kayitPageFont {
+    color: rgb(170, 170, 0);
+}
+
+.kayitCardBaslik {
+    margin: 2%;
+}
+
+.kayitCardInputTextStyle {
+    float: left;
+    width: 96%;
+    height: 70%;
+    margin-top: 1%;
+    margin-left: 2%;
+    background-color: black;
+    color: rgb(170, 170, 0);
+    border-radius:60px;
+    padding-left:10px
+}
+
+.kayitCardFontStyle {
+    float: left;
+    margin: 0.9%;
+    font-size: 150%;
+    margin-left: 2%;
+}
+
+.kayitCardContain {
+    width: 100%;
+    height: 14%;
+    margin-top: 3%;
+}
+
+.kayitCardInputSubmitStyle {
+    width: 96%;
+    height: 80%;
+    margin-top: 4%;
+    background-color: black;
+    color: rgb(170, 170, 0);
+    cursor: pointer;
+    border-radius:100px;
+}

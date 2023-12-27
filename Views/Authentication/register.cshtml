@@ -1,0 +1,64 @@
+﻿<head>
+
+    <title>KARWAGAMES: Kayıt sayfası</title>
+    <link rel="stylesheet" href="~/css/kayitEkran.css">
+
+</head>
+
+<body>
+    <form action="~/Authentication/Saving" method="post">
+        <div class="kayitCard">
+                
+            <div class="kayitCardBaslik">
+                <h1 class="kayitPageFont"><b>KARWAGAMES</b></h1>
+                <h2 class="kayitPageFont"><b>KAYIT SAYFASI</b></h2>
+            </div>
+
+            <div class="kayitCardContain">
+
+                <div class="kayitInputStyle">
+                    <p class="kayitCardFontStyle kayitPageFont">Kullanici adı</p>
+                    <input name="KullaniciAdi" class="kayitCardInputTextStyle" type="text" placeholder="Kullanıcı adınızı giriniz">
+                </div>
+
+            </div>
+
+            <div class="kayitCardContain">
+
+                <div class="kayitInputStyle">
+                    <p class="kayitCardFontStyle kayitPageFont">E posta</p>
+                    <input name="Eposta" class="kayitCardInputTextStyle" type="email" placeholder="Email adresinizi giriniz">
+                </div>
+
+            </div>
+
+            <div class="kayitCardContain">
+
+                <div class="kayitInputStyle">
+                    <p class="kayitCardFontStyle kayitPageFont">Şifre</p>
+                    <input name="sifre" class="kayitCardInputTextStyle" type="password" placeholder="şifrenizi giriniz">
+                </div>
+
+            </div>
+
+            <div class="kayitCardContain">
+
+                <div class="kayitInputStyle">
+                    <p class="kayitCardFontStyle kayitPageFont">Şifre(Yeniden)</p>
+                    <input name="sifreCheck" class="kayitCardInputTextStyle" type="password" placeholder="şifre kontrol">
+                </div>
+
+            </div>
+
+            <div class="kayitCardContain">
+
+                <div class="kayitInputStyle">
+                    <input class="kayitCardInputSubmitStyle" type="submit" value="KAYIT OL">
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+</body>         
