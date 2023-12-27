@@ -1,0 +1,109 @@
+﻿@using oyunsitesiprojedeneme2.Domain.Models;
+@model List<ProductsDataModel>
+@{
+    var pros = new ProductsDataModel();
+    string fotoyol = (("/images/"+pros.productPhoto));
+}
+
+
+
+<head>
+
+    <title>try</title>
+    <link rel="stylesheet" href="~/css/MainPage.css">
+    <link rel="stylesheet" href="~/css/productPage.css">
+
+</head>
+
+<body style="background-image: linear-gradient(black, rgb(33, 6, 33), black);">
+
+
+    <div class="ustMenu">
+
+        <div class="ustMenuPart">
+
+            <!--- <div class="ustMenuPart" style="width: 10%;background-image: url('~/images/trykarwalorYellow.png');background-size:cover; margin-left: 2%;"></div>--->
+            <div class="ustMenuPart" style="width: 100%; margin-left: 4%;">
+                <a href="/Home/Index"><input type="button" class="ustMenuNesne" style="float:left" value="ANASAYFA"></a>
+                <input type="button" class="ustMenuNesne" style="float:left" value="SSS">
+                <input type="button" class="ustMenuNesne" style=" float:left" value="İLETİŞİM">
+                <a href="/Home/Products"><input type="button" class="ustMenuNesne" style="float:left" value="ÜRÜNLER"></a>
+
+            </div>
+
+        </div>
+
+        <div class="ustMenuPart" style="width:48%;">
+
+            <!--- <div class="ustMenuPart" style="width: 10%;background-image: url('~/images/trykarwalorYellow.png');background-size:cover; margin-left: 2%;"></div>--->
+            <div class="ustMenuPart" style="width: 100%; margin-right: 4%;">
+                <form action="/Home">
+                    <a href="/Home/bucketPage"><input type="button" class="ustMenuNesne" style="float:right; cursor:pointer;" value="SEPET"></a>
+                    <a href="/Home/kayitPage?"><input type="button" class="ustMenuNesne" style="float:right; cursor:pointer;" value="KAYIT OL"></a>
+                    <a href="/Home/girisPage"><input type="button" class="ustMenuNesne" style="float:right; cursor:pointer;" value="GİRİŞ YAP"></a>
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="container">
+
+        <div class="Welcome">
+            <p class="welcomeTxt">Oyunlarımız<br></p>
+            <p class="welcomeTxtAbout">Activision ürünlerinde %75 indirim!</p>
+        </div><!-- Welcome sonu -->
+
+
+        <div class="ProductOutCard">
+            @if(Model!=null){
+            @foreach (var pro in Model)
+            {
+
+                    <form action="/cart/AddToCart">
+                <div class="ProductCard">
+                    <div class="productPhotoStyle" style="background-image:url(@pro.productPhoto.ToString()); background-size:cover"></div>
+                    <div class="productTitleCard">
+                        <p class="productTitle">@pro.productName</p>
+                    </div>
+                    <div class="productDescCard">
+                        <p class="productDesc">@pro.productDescription</p>
+                        <p class="productDesc">@pro.productReleaseDate</p>
+                        <p class="productDesc">@pro.productPrice</p>
+                        <input type="hidden" name="productId" value="@pro.productId" />
+                        <div style="float:right; width:13%; height:90%; background-color:blue; margin-top:0.5%; margin-right:0.5%;">
+                                    <input class="CartImg"  type="submit" value="sepete ekle">
+                        </div>
+                    </div>
+
+                </div>
+                </form>
+            }
+            }
+            
+
+        </div>
+
+        <div class="paginationButtonCard"> 
+            <form action="/Home/Products">
+                <div class="paginationButton paginationLeft"><input class="paginationPageButtonStyle" name="submitButton1" value="before" type="submit"></div>
+                <div style="margin-left:30%;" class="paginationButton paginationMid"><input class="paginationPageButtonStyle" name="submitButton1" type="submit" value="1"></div>
+                <div class="paginationButton paginationMid"><input class="paginationPageButtonStyle" name="submitButton1" type="submit" value="2"></div>
+                <div class="paginationButton paginationMid"><input class="paginationPageButtonStyle" name="submitButton1" type="submit" value="3"></div>
+                <div class="paginationButton paginationMid"><input class="paginationPageButtonStyle" name="submitButton1" type="submit" value="4"></div>
+                <div class="paginationButton paginationRight"><input class="paginationPageButtonStyle" name="submitButton1" value="after" type="submit"></div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+            
+</body>

@@ -1,0 +1,102 @@
+﻿.ProductOutCard {
+    background-color: rgb(54, 12, 39);
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+}
+
+.ProductCard{
+
+    padding-top:2%;
+    background-color:rgb(47, 32, 38);
+    width:100%;
+    height:20%;
+
+}
+
+.productPhotoStyle {
+    float: left;
+    height: 90%;
+    margin-left: 2.0%;
+    width: 16%;
+    background-color: rgb(30, 125, 163);
+}
+
+.productTitleCard {
+    width: 73%;
+    height: 28%;
+    background-color: rgb(69, 41, 16);
+    margin-left: 22%;
+    padding-top: 2%;
+}
+
+.productDescCard {
+    background-color: rgb(74, 66, 39);
+    width: 73%;
+    height: 48%;
+    margin-left: 22%;
+    margin-top: 1%;
+}
+.productTitle {
+    color: rgb(209, 209, 4);
+    font-size:40px;
+    margin:0px;
+}
+.productDesc {
+    color: rgb(209, 209, 4);
+    font-size: 15px;
+    margin: 0px;
+    float:left;
+}
+
+.paginationButtonCard {
+    background-color: navajowhite;
+    width: 80%;
+    height: 2%;
+    margin-left: 10%;
+    align-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top:0.60%;
+    margin-top:8%;
+}
+
+.paginationButton {
+    background-color:red;
+    width:5%;
+    height:80%;
+    margin-left:0.75%;
+    cursor:pointer;
+}
+
+.paginationLeft {
+    margin-left: 0.75%;
+    float: left;
+}
+
+.paginationRight {
+    margin-right:0.75%;
+    float:right;
+}
+
+.paginationMid {
+    float:left;
+    margin-left:3%;
+        
+}
+
+.paginationPageButtonStyle {
+    width:100%;
+    height:100%;
+    
+}
+
+.CartImg{
+
+    background-image:url("../images/CartImg.png");
+    background-position:center;
+    background-size:cover;
+    height:80%;
+
+}

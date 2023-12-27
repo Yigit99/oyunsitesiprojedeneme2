@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\MainPage.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\MainPage.cshtml" />
+    <None Include="wwwroot\css\GirisEkran.css" />
+    <None Include="wwwroot\css\MainPage.css" />
+    <None Include="wwwroot\css\StyleSheet.css" />
+    <None Include="wwwroot\images\bune.jpg" />
+    <None Include="wwwroot\images\gumanda.jpg" />
+    <None Include="wwwroot\images\kallofduty.jpg" />
+    <None Include="wwwroot\images\trykarwalorYellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="X.PagedList" Version="8.4.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\oyunprojesideneme2.Services\oyunprojesideneme2.Services.csproj" />
+    <ProjectReference Include="..\oyunsitesiprojedeneme2.Domain\oyunsitesiprojedeneme2.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
